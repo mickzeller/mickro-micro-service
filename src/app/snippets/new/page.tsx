@@ -10,14 +10,13 @@ export default function SnippetCreatePage() {
         const code = formData.get('code') as string
         //     create record in index
 
-        const snippet = await db.snippet.create({
+        await db.snippet.create({
             data: {
                 title,
                 code
             }
         })
-        console.log(snippet)
-        //     redirect the user to home page
+        // redirect the user to home page
         redirect('/')
     }
 
