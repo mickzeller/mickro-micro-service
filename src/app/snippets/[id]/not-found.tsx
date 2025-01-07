@@ -1,8 +1,8 @@
-export default function NotFound() {
+export default function SnippetNotFound() {
 	return (
 		<div>
-			<h1 className="text-xl font-bold">
-				Sorry, but the snippet was not found!
+			<h1 className='text-xl bold'>
+				Sorry, but we couldn&#39;t find that particular snippet
 			</h1>
 		</div>
 	)
